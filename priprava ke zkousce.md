@@ -1,5 +1,12 @@
 https://github.com/jindrichskupa/kiv-spos
 
+Rsync
+------------------------------------------
+```
+rsync -rav /source/path/ /dest/path/
+rsync -rav --dry-run			- na zkoušku
+```
+
 Konfigurace SSH
 ---------------------------------------------------------------------------------------------------
 ```
