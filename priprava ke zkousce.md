@@ -388,14 +388,22 @@ su - postgres
 
 místo mysql příkaz psql
 
+```
 \l			- vylistovat databáze
 \c databaze		- 
 \dt 
 \d tabulka
 \x on | \x off
+```
 
-příkazy viz. github
+je potřeba po vytvoření tabulky v databázi přidat oprávnění na danou tabulku uživateli
 
+```
+\c db01
+GRANT ALL PRIVILEGES ON table01 TO user01;
+```
+
+Více příkazů viz. Skupovo GitHub
 
 
 MAIL
@@ -430,7 +438,7 @@ apt-get install dovecot-imapd
 ```
 
 
-konfigurace v /etc/dovecot/conf.d/10-mail.conf	- možno nastavit maildir
+konfigurace v /etc/dovecot/conf.d/10-mail.conf	- možno nastavit maildir, aby Mutt bral maily ze správného místa
 
 ```
 
